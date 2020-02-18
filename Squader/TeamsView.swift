@@ -41,21 +41,45 @@ class TeamsView: UIViewController, UITableViewDataSource,UITableViewDelegate{
     
     @IBAction func footBallClicked(_ sender: UIButton) {
         clearSelectedBalls()
-        sender.setImage(UIImage(named: "Football_Clicked"), for: .normal)
+//        sender.setImage(UIImage(named: "Football_Clicked"), for: .normal)
+        
+        UIView.transition(with: sender,
+        duration: 0.25,
+        options: .transitionFlipFromRight,
+        animations: { sender.setImage(UIImage(#imageLiteral(resourceName: "Football_Clicked")), for: .normal)  },
+        completion: nil)
     }
     
     @IBAction func tennisBallClicked(_ sender: UIButton) {
         clearSelectedBalls()
-        sender.setImage(UIImage(named: "Tennis_Clicked"), for: .normal)
+//        sender.setImage(UIImage(named: "Tennis_Clicked"), for: .normal)
+        
+        UIView.transition(with: sender,
+        duration: 0.25,
+        options: .transitionFlipFromRight,
+        animations: { sender.setImage(UIImage(#imageLiteral(resourceName: "Tennis_Clicked")), for: .normal)  },
+        completion: nil)
     }
     @IBAction func volleyBallClicked(_ sender: UIButton) {
         clearSelectedBalls()
-        sender.setImage(UIImage(named: "Volleyball_Clicked"), for: .normal)
+//        sender.setImage(UIImage(named: "Volleyball_Clicked"), for: .normal)
+        
+        UIView.transition(with: sender,
+        duration: 0.25,
+        options: .transitionFlipFromRight,
+        animations: { sender.setImage(UIImage(#imageLiteral(resourceName: "Volleyball_Clicked")), for: .normal)  },
+        completion: nil)
     }
     
     @IBAction func basketBall(_ sender: UIButton) {
         clearSelectedBalls()
-        sender.setImage(UIImage(named: "Basketball_Clicked"), for: .normal)
+//        sender.setImage(UIImage(named: "Basketball_Clicked"), for: .normal)
+        
+        UIView.transition(with: sender,
+        duration: 0.25,
+        options: .transitionFlipFromRight,
+        animations: { sender.setImage(UIImage(#imageLiteral(resourceName: "Basketball_Clicked")), for: .normal)  },
+        completion: nil)
     }
     
     func clearSelectedBalls() {
