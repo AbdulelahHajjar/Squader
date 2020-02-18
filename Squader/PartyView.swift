@@ -10,7 +10,11 @@ import UIKit
 
 class PartyView: UIViewController {
     
+    var k = 5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
 }
