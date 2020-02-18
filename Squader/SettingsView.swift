@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SettingsView.swift
 //  Squader
 //
 //  Created by Abdulelah Hajjar on 12/02/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SettingsView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

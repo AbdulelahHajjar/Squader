@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  RecentGamesView.swift
 //  Squader
 //
 //  Created by Abdulelah Hajjar on 12/02/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class RecentGamesView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +17,3 @@ class FirstViewController: UIViewController {
 
 
 }
-
