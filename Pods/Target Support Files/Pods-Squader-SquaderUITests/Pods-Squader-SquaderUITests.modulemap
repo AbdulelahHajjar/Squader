@@ -1,0 +1,6 @@
+framework module Pods_Squader_SquaderUITests {
+  umbrella header "Pods-Squader-SquaderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
