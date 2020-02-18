@@ -89,6 +89,10 @@
                                 <rect key="frame" x="0.0" y="150" width="375" height="579"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient " translatesAutoresizingMaskIntoConstraints="NO" id="syn-Ys-agc">
+                                <rect key="frame" x="0.0" y="83" width="375" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8X-gG-K8z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
@@ -220,6 +224,7 @@
         <image name="Basketball_Clicked" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Football" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Football_Clicked" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="Gradient " width="414" height="138"/>
         <image name="Tennis" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Tennis_Clicked" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Volleyball" width="170.66667175292969" height="170.66667175292969"/>
