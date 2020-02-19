@@ -40,12 +40,19 @@ class MatchCell: UITableViewCell {
 //        // Configure the view for the selected state
 //    }
     
-    
+    func full(){
+        if self.progressView.value == 90 {
+            self.progressView.progressColor = UIColor.red
+            self.progressView.progressStrokeColor = UIColor.red
+            self.progressView.fontColor = UIColor.red
+            button.isUserInteractionEnabled = false
+        }
+    }
     @IBAction func pressed(_ sender: UIButton) {
-        print("Supper")
-        
+        full()
         UIView.animate(withDuration: 1.0){
             self.progressView.value = self.progressView.value + 10
+            
         }
     }
 }
