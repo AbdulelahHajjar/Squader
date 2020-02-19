@@ -21,19 +21,20 @@ class MatchCell: UITableViewCell {
         
     }
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//
-//        cellBack.layer.cornerRadius = 10
-//        cellBack.layer.masksToBounds = false
-//
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+
+        button.layer.cornerRadius = 35
+        button.layer.masksToBounds = false
+        
+
 //        cellBack.layer.shadowColor = UIColor.black.cgColor
 //        cellBack.layer.shadowOpacity = 0.5
 //        cellBack.layer.shadowOffset = .zero
 //        cellBack.layer.shadowRadius = 3
-//
-//    }
+
+    }
 
 //    override func setSelected(_ selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)
@@ -50,9 +51,20 @@ class MatchCell: UITableViewCell {
     }
     @IBAction func pressed(_ sender: UIButton) {
         full()
-        UIView.animate(withDuration: 0.25){
-            self.progressView.value = self.progressView.value + 10
+        
+            if self.button.backgroundColor == #colorLiteral(red: 0.2705882353, green: 0.9137254902, blue: 0.4784313725, alpha: 1) {
+                self.button.backgroundColor = #colorLiteral(red: 0.7332600355, green: 0.7333846688, blue: 0.7332436442, alpha: 1)
+                UIView.animate(withDuration: 0.25){
+                self.progressView.value = self.progressView.value - 10
+                } } else {
+                self.button.backgroundColor = #colorLiteral(red: 0.2705882353, green: 0.9137254902, blue: 0.4784313725, alpha: 1)
+                UIView.animate(withDuration: 0.25){
+                self.progressView.value = self.progressView.value + 10
+            }
+            
             
         }
+        }
+        
     }
-}
+
