@@ -107,7 +107,7 @@ class TeamsView: UIViewController, UITableViewDataSource,UITableViewDelegate{
     }
     
     @objc func oneTapped(_ sender: Any?) {
-        print("super")
+//        print("super")
     }
     
     func joinTeam() {
