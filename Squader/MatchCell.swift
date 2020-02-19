@@ -50,7 +50,7 @@ class MatchCell: UITableViewCell {
     }
     @IBAction func pressed(_ sender: UIButton) {
         full()
-        UIView.animate(withDuration: 1.0){
+        UIView.animate(withDuration: 0.25){
             self.progressView.value = self.progressView.value + 10
             
         }
