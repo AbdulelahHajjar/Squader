@@ -16,31 +16,68 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-rL-oWK">
-                        <rect key="frame" x="16" y="11" width="288" height="82"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMj-pq-uGB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAh-kz-IPZ" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="49" y="14" width="75" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="0.99622100589999996" green="0.50782585140000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressRotationAngle">
+                                        <real key="value" value="54"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="0.99622100589999996" green="0.50782585140000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                        <color key="value" red="0.99622100589999996" green="0.50782585140000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRB-YE-kOi">
-                        <rect key="frame" x="16" y="11" width="288" height="82"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRB-YE-kOi">
+                        <rect key="frame" x="141" y="27" width="163" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="JOIN">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <connections>
-                            <action selector="join:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="I3i-YP-lco"/>
+                            <action selector="pressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2hG-d5-4vi"/>
                         </connections>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="aRB-YE-kOi" secondAttribute="trailing" constant="16" id="59N-OA-w2Y"/>
-                    <constraint firstItem="NU0-rL-oWK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JIi-G1-KzE"/>
-                    <constraint firstAttribute="bottom" secondItem="aRB-YE-kOi" secondAttribute="bottom" constant="11" id="OR8-5R-83M"/>
-                    <constraint firstItem="NU0-rL-oWK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gm5-01-m1y"/>
-                    <constraint firstItem="aRB-YE-kOi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="j8r-dU-cQl"/>
-                    <constraint firstItem="aRB-YE-kOi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="xBf-FS-uTc"/>
+                    <constraint firstItem="tMj-pq-uGB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9eK-N8-WgC"/>
+                    <constraint firstAttribute="trailing" secondItem="tMj-pq-uGB" secondAttribute="trailing" id="CKM-Rf-CJ9"/>
+                    <constraint firstAttribute="bottom" secondItem="tMj-pq-uGB" secondAttribute="bottom" id="RgJ-bp-K6U"/>
+                    <constraint firstItem="tMj-pq-uGB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Y2F-f5-cu6"/>
+                    <constraint firstItem="tMj-pq-uGB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZHc-fB-Li4"/>
+                    <constraint firstItem="tMj-pq-uGB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cuP-X3-ket"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="cellBack" destination="aRB-YE-kOi" id="XdC-sI-9fg"/>
+                <outlet property="button" destination="aRB-YE-kOi" id="YsM-aj-t0U"/>
+                <outlet property="progressView" destination="tAh-kz-IPZ" id="HEL-7b-r8B"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
         </tableViewCell>

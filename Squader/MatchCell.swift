@@ -7,35 +7,45 @@
 //
 
 import UIKit
+import MBCircularProgressBar
 
 class MatchCell: UITableViewCell {
     
     //@IBOutlet weak var cellBack: UIView!
     
-    @IBOutlet weak var cellBack: UIButton!
+//    @IBOutlet weak var cellBack: UIButton!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var progressView: MBCircularProgressBarView!
     
     @IBAction func join(_ sender: Any) {
         
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        
-        cellBack.layer.cornerRadius = 10
-        cellBack.layer.masksToBounds = false
-        
-        cellBack.layer.shadowColor = UIColor.black.cgColor
-        cellBack.layer.shadowOpacity = 0.5
-        cellBack.layer.shadowOffset = .zero
-        cellBack.layer.shadowRadius = 3
-        
-    }
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        // Initialization code
+//
+//        cellBack.layer.cornerRadius = 10
+//        cellBack.layer.masksToBounds = false
+//
+//        cellBack.layer.shadowColor = UIColor.black.cgColor
+//        cellBack.layer.shadowOpacity = 0.5
+//        cellBack.layer.shadowOffset = .zero
+//        cellBack.layer.shadowRadius = 3
+//
+//    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//        // Configure the view for the selected state
+//    }
     
+    
+    @IBAction func pressed(_ sender: UIButton) {
+        print("Supper")
+        
+        UIView.animate(withDuration: 1.0){
+            self.progressView.value = self.progressView.value + 10
+        }
+    }
 }

@@ -82,6 +82,8 @@ class TeamsView: UIViewController, UITableViewDataSource,UITableViewDelegate{
         completion: nil)
     }
     
+    
+    
     func clearSelectedBalls() {
         footBall.setImage(UIImage(named: "Football"), for: .normal)
         tennisBall.setImage(UIImage(named: "Tennis"), for: .normal)
@@ -97,7 +99,15 @@ class TeamsView: UIViewController, UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MatchCell", for: indexPath) as! MatchCell
+        
+        cell.button.addTarget(self, action: #selector(self.oneTapped(_:)), for: .touchUpInside)
+        
+
         return cell
+    }
+    
+    @objc func oneTapped(_ sender: Any?) {
+        print("super")
     }
     
     func joinTeam() {

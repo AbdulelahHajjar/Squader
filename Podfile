@@ -5,6 +5,7 @@ target 'Squader' do
   use_frameworks!
 
   # Pods for Squader
+  pod "MBCircularProgressBar"
   target 'SquaderTests' do
     inherit! :search_paths
     # Pods for testing
