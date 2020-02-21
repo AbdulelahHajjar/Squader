@@ -26,9 +26,11 @@ class TeamsView: UIViewController, UITableViewDataSource,UITableViewDelegate{
         tableView.delegate = self
         tableView.dataSource = self
         
-        setGradientForStatusBar()
     }
     
+    override func viewDidLayoutSubviews() {
+        setGradientForStatusBar()
+    }
     
     func setGradientForStatusBar() {
         let gradient = CAGradientLayer()
@@ -111,8 +113,6 @@ class TeamsView: UIViewController, UITableViewDataSource,UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MatchCell", for: indexPath) as! MatchCell
         
         cell.button.addTarget(self, action: #selector(self.oneTapped(_:)), for: .touchUpInside)
-        
-
         return cell
     }
     

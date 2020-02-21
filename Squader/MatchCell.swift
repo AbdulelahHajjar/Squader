@@ -49,6 +49,8 @@ class MatchCell: UITableViewCell {
             button.isUserInteractionEnabled = false
         }
     }
+    
+    
     @IBAction func pressed(_ sender: UIButton) {
         full()
         
